@@ -26,6 +26,18 @@ Claude Code нужно установить отдельно и авторизо
 `claude auth login`. Инструкция — в
 [официальной документации Claude Code](https://code.claude.com/docs/en/setup).
 
+## Установка через Homebrew
+
+Если Homebrew уже установлен, достаточно одной команды:
+
+```sh
+brew install --cask snowell-io/claudex/claudex@alpha
+```
+
+GitHub-авторизация и токены не нужны. После установки запустите
+`open -a Claudex`. Для неподписанной альфы может потребоваться разрешение
+первого запуска в настройках macOS, как описано выше.
+
 ## Обновление
 
 Перед заменой приложения выберите в меню Claudex **Stop All Work and Quit**.
@@ -33,6 +45,13 @@ Claude Code нужно установить отдельно и авторизо
 С остановленным фоновым помощником сохраните резервную копию
 `~/Library/Application Support/ClaudexAlpha` и предыдущую версию приложения.
 Затем скачайте новый ZIP и замените Claudex.app в Applications.
+
+Для версии из Homebrew вместо замены ZIP выполните:
+
+```sh
+brew update
+brew upgrade --cask snowell-io/claudex/claudex@alpha
+```
 
 [Все версии и контрольные суммы](https://github.com/snowell-io/claudex-releases/releases).
 
